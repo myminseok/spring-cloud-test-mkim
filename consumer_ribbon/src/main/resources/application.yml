@@ -1,0 +1,12 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: consumer
+  cloud:
+    config:
+      uri: http://localhost:8888
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+

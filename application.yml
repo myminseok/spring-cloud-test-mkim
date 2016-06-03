@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+
+eureka:
+  instance:
+#    leaseRenewalIntervalInSeconds: 30
+#    leaseExpirationDurationInSeconds: 120
+#    ip-address: 127.0.0.1
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.cloud.client.hostname}:${server.port}:${spring.application.instance_id}
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

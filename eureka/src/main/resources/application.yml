@@ -1,0 +1,23 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+
+
+#eureka:
+#  name: eureka1
+#  instance:
+#    registerWithEureka: false
+
