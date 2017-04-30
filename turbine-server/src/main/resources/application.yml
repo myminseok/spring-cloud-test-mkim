@@ -4,8 +4,10 @@ server:
 management:
   port: 9998
 
-
 spring:
+  application:
+    name: turbine-server
+
   rabbitmq:
     host: 127.0.0.1
     port: 5672
