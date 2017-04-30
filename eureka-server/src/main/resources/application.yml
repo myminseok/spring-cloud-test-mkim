@@ -14,10 +14,3 @@ eureka:
     fetchRegistry: true
   server:
     waitTimeInMsWhenSyncEmpty: 0
-
-
-#eureka:
-#  name: eureka1
-#  instance:
-#    registerWithEureka: false
-
