@@ -1,11 +1,11 @@
 ---
 applications:
-- name: service2
+- name: service1
   memory: 1gb
   instances: 1
   timeout: 180
-  host: service2
-  path: target/service2-0.0.1-SNAPSHOT.jar
+  host: service1
+  path: target/service1-0.0.1-SNAPSHOT.jar
   env:
     TRUST_CERTS: api.system.pcfdemo.net
     SPRING_PROFILES_ACTIVE: cloud

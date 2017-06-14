@@ -1,0 +1,16 @@
+server.port: 8089
+spring.application.name: spring-cloud-ribbon-client
+
+security:
+  basic:
+    enabled: false
+    
+service2:
+  #ribbon:
+  #  eureka:
+  #    enabled: false
+  #  listOfServers: localhost:8083,localhost:8084
+  #  ServerListRefreshInterval: 5000
+  
+
+    

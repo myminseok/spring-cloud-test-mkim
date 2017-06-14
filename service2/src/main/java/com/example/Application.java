@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -40,6 +41,15 @@ public class Application {
 	@Value("${server.port}")
 	int port=0;
 
+//	@Value("${key2}")
+//	String key;
+//	
+//	
+//	@RequestMapping("/key")
+//	public String get(){
+//		return  key;
+//	}
+	
 	@RequestMapping("/call")
 	@HystrixCommand(fallbackMethod = "fallback")
 	public String foo() throws InterruptedException{
